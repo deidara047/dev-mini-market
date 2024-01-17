@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateHelloWorldInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type HelloWorld {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Mutation {
+  createHelloWorld(createHelloWorldInput: CreateHelloWorldInput!): HelloWorld!
+  removeHelloWorld(id: Int!): HelloWorld!
+  updateHelloWorld(updateHelloWorldInput: UpdateHelloWorldInput!): HelloWorld!
+}
+
+type Query {
+  helloWorld(id: Int!): HelloWorld!
+  helloWorldAll: [HelloWorld!]!
+}
+
+input UpdateHelloWorldInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
