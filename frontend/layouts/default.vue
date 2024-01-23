@@ -30,8 +30,7 @@
             <NuxtLink class="navlinks" :prefetch="true" to="/">Home</NuxtLink>
             <NuxtLink class="navlinks" :prefetch="true" to="/to-buy">To-Buy</NuxtLink>
             <NuxtLink class="navlinks" :prefetch="true" to="/all-products">All Products</NuxtLink>
-            <NuxtLink class="navlinks" :prefetch="true" to="/login">Log In</NuxtLink>
-            <NuxtLink class="navlinks" :prefetch="true" to="/signup">Sign Up</NuxtLink>
+            <NuxtLink class="navlinks" :prefetch="true" to="/login-or-signup">Log In/Sign Up</NuxtLink>
             <NuxtLink class="navlinks" :prefetch="true" to="/about">About</NuxtLink>
             <button @click="isCartModalOpen = true"
               class="dark:text-white dark:hover:text-gray-300 text-gray-700 hover:text-black transition-colors">
@@ -77,13 +76,26 @@
 
 <script setup lang="ts">
 const isCartModalOpen = ref(false);
+const config = useRuntimeConfig();
+const { account } = useAppWrite(config.public.appwriteProjectID);
+
 const items = [
   [{
     label: 'View Profile',
     icon: 'i-heroicons-user-20-solid'
   }, {
     label: 'Log out',
-    icon: 'i-heroicons-arrow-up-right-20-solid'
+    icon: 'i-heroicons-arrow-up-right-20-solid',
+    click: () => {
+      const promise = account.deleteSession('current');
+
+      promise.then(function (response) {
+          console.log(response); // Success
+          navigateTo("/");
+      }, function (error) {
+          console.log(error); // Failure
+      });
+    }
   }]
 ];
 </script>

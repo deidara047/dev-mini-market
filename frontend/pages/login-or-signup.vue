@@ -56,9 +56,13 @@
 <template>
   <div class="flex justify-center">
     <UCard class="max-w-[2000px]">
-      <h1 class="font-bold text-2xl">Login</h1>
-      <UButton class="mt-2" color="blue" v-if="contentLoaded"><font-awesome-icon :icon="['fab', 'google']" /> Log In/Sign
-        Up with Google</UButton>
+      <div v-if="contentLoaded">
+        <h1 class="font-bold text-2xl mb-2">Login/Signup</h1>
+        <UButton @click="onSignInButtonClicked" class="mt-2" color="blue"><font-awesome-icon :icon="['fab', 'google']" />
+          Log In/Sign
+          Up with Google</UButton>
+      </div>
+
       <div v-else class="lds-ripple">
         <div></div>
         <div></div>
@@ -68,7 +72,27 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  middleware: 'auth'
+});
+
 const contentLoaded = ref(false);
+const config = useRuntimeConfig();
+const { account } = useAppWrite(config.public.appwriteProjectID);
+
+function onSignInButtonClicked() {
+  account.createOAuth2Session("google", "http://localhost:3000/success-login", "http://localhost:3000/fail-login")
+}
+
+async function getCurrentInfo() {
+  const promise = account.get();
+
+  promise.then(function (response) {
+    console.log(response);
+  }, function (error) {
+    console.log(error);
+  });
+}
 
 useHead({
   title: "Log In | Dev Mini-Market"
