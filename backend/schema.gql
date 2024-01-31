@@ -2,29 +2,33 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-input CreateHelloWorldInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type HelloWorld {
-  """Example field (placeholder)"""
-  exampleField: Int!
+input CreateTodoInput {
+  imageUrl: String
+  owner: String!
+  text: String!
 }
 
 type Mutation {
-  createHelloWorld(createHelloWorldInput: CreateHelloWorldInput!): HelloWorld!
-  removeHelloWorld(id: Int!): HelloWorld!
-  updateHelloWorld(updateHelloWorldInput: UpdateHelloWorldInput!): HelloWorld!
+  createTodo(createTodoInput: CreateTodoInput!): Todo!
+  removeTodo(id: Int!): Todo!
+  updateTodo(updateTodoInput: UpdateTodoInput!): Todo!
 }
 
 type Query {
-  helloWorld(id: Int!): HelloWorld!
-  helloWorldAll: [HelloWorld!]!
+  todo(id: Int!): Todo!
+  todoAll: [Todo!]!
 }
 
-input UpdateHelloWorldInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+type Todo {
   id: Int!
+  imageUrl: String
+  owner: String!
+  text: String!
+}
+
+input UpdateTodoInput {
+  id: Int!
+  imageUrl: String
+  owner: String
+  text: String
 }

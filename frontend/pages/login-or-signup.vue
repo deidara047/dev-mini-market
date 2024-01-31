@@ -72,26 +72,13 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  middleware: 'auth'
-});
-
 const contentLoaded = ref(false);
+const userStore = useUserStore();
 const config = useRuntimeConfig();
 const { account } = useAppWrite(config.public.appwriteProjectID);
 
 function onSignInButtonClicked() {
-  account.createOAuth2Session("google", "http://localhost:3000/success-login", "http://localhost:3000/fail-login")
-}
-
-async function getCurrentInfo() {
-  const promise = account.get();
-
-  promise.then(function (response) {
-    console.log(response);
-  }, function (error) {
-    console.log(error);
-  });
+  account.createOAuth2Session("google", "http://localhost:3000", "http://localhost:3000/fail-login")
 }
 
 useHead({
@@ -99,6 +86,6 @@ useHead({
 });
 
 onMounted(() => {
-  contentLoaded.value = true;
+  contentLoaded.value = userStore.fetchState !== "loading";
 })
 </script>

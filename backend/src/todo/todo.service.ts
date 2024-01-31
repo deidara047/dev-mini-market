@@ -1,26 +1,72 @@
 import { Injectable } from '@nestjs/common';
 import { CreateTodoInput } from './dto/create-todo.input';
 import { UpdateTodoInput } from './dto/update-todo.input';
+import { Todo as TodoEntity } from './entities/todo.entity';
 
 @Injectable()
 export class TodoService {
   create(createTodoInput: CreateTodoInput) {
-    return 'This action adds a new todo';
+    const returnData: TodoEntity = {
+      id: 1,
+      text: "create",
+      imageUrl: "http",
+      owner: "12"
+    }
+
+    return returnData;
   }
 
   findAll() {
-    return `This action returns all todo`;
+    const returnData: TodoEntity[] = [{
+      id: 1,
+      text: "findAll1",
+      imageUrl: "http",
+      owner: "12"
+    },{
+      id: 2,
+      text: "findAll2",
+      imageUrl: "http",
+      owner: "12"
+    },{
+      id: 3,
+      text: "findAll3",
+      imageUrl: "http",
+      owner: "12"
+    }]
+
+    return returnData;
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} todo`;
+    const returnData: TodoEntity = {
+      id: 1,
+      text: "findOne",
+      imageUrl: "http",
+      owner: "12"
+    }
+
+    return returnData;
   }
 
   update(id: number, updateTodoInput: UpdateTodoInput) {
-    return `This action updates a #${id} todo`;
+    const returnData: TodoEntity = {
+      id: 1,
+      text: "update",
+      imageUrl: "http",
+      owner: "12"
+    }
+
+    return returnData;
   }
 
   remove(id: number) {
-    return `This action removes a #${id} todo`;
+    const returnData: TodoEntity = {
+      id: 1,
+      text: "remove",
+      imageUrl: "http",
+      owner: "12"
+    }
+
+    return returnData;
   }
 }
