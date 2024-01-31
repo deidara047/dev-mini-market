@@ -20,17 +20,23 @@
         </div>
       </div>
     </UCard>
-    <div class="flex gap-5">
-      <IngredientCard />
-      <IngredientCard />
-      <IngredientCard />
-      <IngredientCard />
+    <div class="grid grid-cols-4 gap-5">
+      <IngredientCard :id="ingredientsData[22].ingredientId" :ingredient="ingredientsData[22].ingredient" />
+      <IngredientCard :id="ingredientsData[1].ingredientId" :ingredient="ingredientsData[1].ingredient" />
+      <IngredientCard :id="ingredientsData[75].ingredientId" :ingredient="ingredientsData[75].ingredient" />
+      <IngredientCard :id="ingredientsData[100].ingredientId" :ingredient="ingredientsData[100].ingredient" />
     </div>
     
   </main>
 </template>
 
 <script setup lang="ts">
+import ingredientsData from "@/src/ingredients_data.json";
+
+async function hydrateIngredientsArray() {
+
+}
+
 useHead({
   title: "Welcome to Dev Mini-Market!"
 });

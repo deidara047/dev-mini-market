@@ -1,0 +1,406 @@
+[
+  {
+    "ingredient": "salt",
+    "ingredientId": 2047
+  },
+  {
+    "ingredient": "olive oil",
+    "ingredientId": 4053
+  },
+  {
+    "ingredient": "butter",
+    "ingredientId": 1001
+  },
+  {
+    "ingredient": "sugar",
+    "ingredientId": 19335
+  },
+  {
+    "ingredient": "water",
+    "ingredientId": 14412
+  },
+  {
+    "ingredient": "flour",
+    "ingredientId": 20081
+  },
+  {
+    "ingredient": "garlic",
+    "ingredientId": 11215
+  },
+  {
+    "ingredient": "eggs",
+    "ingredientId": 1123
+  },
+  {
+    "ingredient": "onion",
+    "ingredientId": 11282
+  },
+  {
+    "ingredient": "vanilla extract",
+    "ingredientId": 2050
+  },
+  {
+    "ingredient": "milk",
+    "ingredientId": 1077
+  },
+  {
+    "ingredient": "kosher salt",
+    "ingredientId": 1082047
+  },
+  {
+    "ingredient": "lemon juice",
+    "ingredientId": 9152
+  },
+  {
+    "ingredient": "unsalted butter",
+    "ingredientId": 1145
+  },
+  {
+    "ingredient": "black pepper",
+    "ingredientId": 1002030
+  },
+  {
+    "ingredient": "baking powder",
+    "ingredientId": 18371
+  },
+  {
+    "ingredient": "pepper",
+    "ingredientId": 1002030
+  },
+  {
+    "ingredient": "salt and pepper",
+    "ingredientId": 1102047
+  },
+  {
+    "ingredient": "egg",
+    "ingredientId": 1123
+  },
+  {
+    "ingredient": "brown sugar",
+    "ingredientId": 19334
+  },
+  {
+    "ingredient": "baking soda",
+    "ingredientId": 18372
+  },
+  {
+    "ingredient": "garlic cloves",
+    "ingredientId": 11215
+  },
+  {
+    "ingredient": "vegetable oil",
+    "ingredientId": 4513
+  },
+  {
+    "ingredient": "granulated sugar",
+    "ingredientId": 19335
+  },
+  {
+    "ingredient": "honey",
+    "ingredientId": 19296
+  },
+  {
+    "ingredient": "ground cinnamon",
+    "ingredientId": 2010
+  },
+  {
+    "ingredient": "ground pepper",
+    "ingredientId": 1002030
+  },
+  {
+    "ingredient": "cream cheese",
+    "ingredientId": 1017
+  },
+  {
+    "ingredient": "parmesan cheese",
+    "ingredientId": 1033
+  },
+  {
+    "ingredient": "garlic powder",
+    "ingredientId": 1022020
+  },
+  {
+    "ingredient": "carrots",
+    "ingredientId": 11124
+  },
+  {
+    "ingredient": "cinnamon",
+    "ingredientId": 2010
+  },
+  {
+    "ingredient": "oregano",
+    "ingredientId": 2027
+  },
+  {
+    "ingredient": "red onion",
+    "ingredientId": 10011282
+  },
+  {
+    "ingredient": "heavy cream",
+    "ingredientId": 1053
+  },
+  {
+    "ingredient": "celery",
+    "ingredientId": 11143
+  },
+  {
+    "ingredient": "chicken",
+    "ingredientId": 1025006
+  },
+  {
+    "ingredient": "sour cream",
+    "ingredientId": 1056
+  },
+  {
+    "ingredient": "vanilla",
+    "ingredientId": 2050
+  },
+  {
+    "ingredient": "sea salt",
+    "ingredientId": 1012047
+  },
+  {
+    "ingredient": "green onions",
+    "ingredientId": 11291
+  },
+  {
+    "ingredient": "lime juice",
+    "ingredientId": 9160
+  },
+  {
+    "ingredient": "soy sauce",
+    "ingredientId": 16124
+  },
+  {
+    "ingredient": "powdered sugar",
+    "ingredientId": 19336
+  },
+  {
+    "ingredient": "fresh parsley",
+    "ingredientId": 11297
+  },
+  {
+    "ingredient": "bacon",
+    "ingredientId": 10123
+  },
+  {
+    "ingredient": "cornstarch",
+    "ingredientId": 20027
+  },
+  {
+    "ingredient": "ground cumin",
+    "ingredientId": 1002014
+  },
+  {
+    "ingredient": "tomatoes",
+    "ingredientId": 11529
+  },
+  {
+    "ingredient": "canola oil",
+    "ingredientId": 4582
+  },
+  {
+    "ingredient": "oil",
+    "ingredientId": 4582
+  },
+  {
+    "ingredient": "chicken broth",
+    "ingredientId": 6194
+  },
+  {
+    "ingredient": "maple syrup",
+    "ingredientId": 19911
+  },
+  {
+    "ingredient": "red bell pepper",
+    "ingredientId": 11821
+  },
+  {
+    "ingredient": "canned tomatoes",
+    "ingredientId": 10011693
+  },
+  {
+    "ingredient": "lemon zest",
+    "ingredientId": 9156
+  },
+  {
+    "ingredient": "paprika",
+    "ingredientId": 2028
+  },
+  {
+    "ingredient": "dijon mustard",
+    "ingredientId": 1002046
+  },
+  {
+    "ingredient": "chili powder",
+    "ingredientId": 2009
+  },
+  {
+    "ingredient": "chocolate",
+    "ingredientId": 19081
+  },
+  {
+    "ingredient": "mayonnaise",
+    "ingredientId": 4025
+  },
+  {
+    "ingredient": "white sugar",
+    "ingredientId": 19335
+  },
+  {
+    "ingredient": "onions",
+    "ingredientId": 11282
+  },
+  {
+    "ingredient": "fresh cilantro",
+    "ingredientId": 11165
+  },
+  {
+    "ingredient": "parsley",
+    "ingredientId": 11297
+  },
+  {
+    "ingredient": "cilantro",
+    "ingredientId": 11165
+  },
+  {
+    "ingredient": "pecans",
+    "ingredientId": 12142
+  },
+  {
+    "ingredient": "beef",
+    "ingredientId": 23572
+  },
+  {
+    "ingredient": "ginger",
+    "ingredientId": 11216
+  },
+  {
+    "ingredient": "garlic clove",
+    "ingredientId": 11215
+  },
+  {
+    "ingredient": "red pepper flakes",
+    "ingredientId": 1032009
+  },
+  {
+    "ingredient": "walnuts",
+    "ingredientId": 12155
+  },
+  {
+    "ingredient": "cayenne pepper",
+    "ingredientId": 2031
+  },
+  {
+    "ingredient": "extra virgin olive oil",
+    "ingredientId": 1034053
+  },
+  {
+    "ingredient": "carrot",
+    "ingredientId": 11124
+  },
+  {
+    "ingredient": "coconut oil",
+    "ingredientId": 4047
+  },
+  {
+    "ingredient": "zucchini",
+    "ingredientId": 11477
+  },
+  {
+    "ingredient": "strawberries",
+    "ingredientId": 9316
+  },
+  {
+    "ingredient": "worcestershire sauce",
+    "ingredientId": 6971
+  },
+  {
+    "ingredient": "sesame oil",
+    "ingredientId": 4058
+  },
+  {
+    "ingredient": "food dye",
+    "ingredientId": 10711111
+  },
+  {
+    "ingredient": "orange juice",
+    "ingredientId": 9206
+  },
+  {
+    "ingredient": "potatoes",
+    "ingredientId": 11362
+  },
+  {
+    "ingredient": "fish",
+    "ingredientId": 10115261
+  },
+  {
+    "ingredient": "tomato",
+    "ingredientId": 11529
+  },
+  {
+    "ingredient": "juice of lemon",
+    "ingredientId": 9152
+  },
+  {
+    "ingredient": "avocado",
+    "ingredientId": 9037
+  },
+  {
+    "ingredient": "buttermilk",
+    "ingredientId": 1230
+  },
+  {
+    "ingredient": "light brown sugar",
+    "ingredientId": 19334
+  },
+  {
+    "ingredient": "nutmeg",
+    "ingredientId": 2025
+  },
+  {
+    "ingredient": "balsamic vinegar",
+    "ingredientId": 2069
+  },
+  {
+    "ingredient": "ground ginger",
+    "ingredientId": 2021
+  },
+  {
+    "ingredient": "yellow onion",
+    "ingredientId": 10511282
+  },
+  {
+    "ingredient": "fresh ginger",
+    "ingredientId": 11216
+  },
+  {
+    "ingredient": "egg whites",
+    "ingredientId": 1124
+  },
+  {
+    "ingredient": "ground nutmeg",
+    "ingredientId": 2025
+  },
+  {
+    "ingredient": "shredded cheddar cheese",
+    "ingredientId": 1001009
+  },
+  {
+    "ingredient": "green bell pepper",
+    "ingredientId": 11333
+  },
+  {
+    "ingredient": "almonds",
+    "ingredientId": 12061
+  },
+  {
+    "ingredient": "whole milk",
+    "ingredientId": 1077
+  },
+  {
+    "ingredient": "lemon",
+    "ingredientId": 9150
+  }
+]

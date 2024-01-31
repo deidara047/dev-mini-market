@@ -8,16 +8,28 @@
     </div>
     <hr />
     <div class="grid grid-cols-4 gap-5">
-      <IngredientCard />
-      <IngredientCard />
-      <IngredientCard />
-      <IngredientCard />
-      <IngredientCard />
+      <IngredientCard 
+        v-for="ingred in ingredientsData.slice(rangePageData.init, rangePageData.final)"
+        :key="ingred.ingredientId"
+        :ingredient="ingred.ingredient"
+        :id="ingred.ingredientId"
+      />
     </div>
+    <UPagination v-model="page" :page-count="8" :total="ingredientsData.length" />
   </main>
 </template>
 
 <script setup lang="ts">
+import ingredientsData from "@/src/ingredients_data.json";
+
+const page = ref(1);
+const rangePageData = computed(() => {
+  return {
+    init: (8*(page.value)) - 8,
+    final: ((8*page.value) - 1) <= ingredientsData.length ? 8*page.value : ingredientsData.length
+  }
+});
+
 useHead({
   title: "All Products | Dev Mini-Market"
 });
