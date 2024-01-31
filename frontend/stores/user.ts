@@ -17,8 +17,11 @@ export const useUserStore = defineStore('user', {
       this.fetchState = res;
     },
     deleteUserInfo() {
+      const cartStore = useCartStore();
       this.userInfo = null;
       this.fetchState = "failure";
+      
+      cartStore.cleanCart();
     }
   }
 });
