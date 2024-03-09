@@ -11,11 +11,9 @@
       <h1 class="font-semibold text-2xl">Your note:</h1>
     </div>
     <UCard class="mx-auto max-w-[475px]">
-      <p>Title</p>
+      <p><b>Title</b></p>
       <p>Boring text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corporis obcaecati ipsum? Rerum,
         vero nostrum!</p>
-      <NuxtImg src="https://images.metadata.sky.com/pd-image/3cb0835c-8b46-48b4-9bac-c0cad81d3366/16-9"
-        class="w-full rounded"></NuxtImg>
       <UButton class="mt-4">Edit</UButton>
     </UCard>
   </main>

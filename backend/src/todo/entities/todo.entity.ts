@@ -6,10 +6,10 @@ export class Todo {
   id: number;
 
   @Field()
-  text: string;
+  title: string;
 
-  @Field({nullable: true})
-  imageUrl?: string;
+  @Field()
+  text: string;
 
   @Field()
   owner: string; // ID of the owner from appwrite users manegement system

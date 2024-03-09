@@ -3,7 +3,6 @@
 # ------------------------------------------------------
 
 input CreateTodoInput {
-  imageUrl: String
   owner: String!
   text: String!
 }
@@ -21,14 +20,12 @@ type Query {
 
 type Todo {
   id: Int!
-  imageUrl: String
   owner: String!
   text: String!
 }
 
 input UpdateTodoInput {
   id: Int!
-  imageUrl: String
   owner: String
   text: String
 }

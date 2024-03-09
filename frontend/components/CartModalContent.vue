@@ -23,14 +23,7 @@
       <div
         class="p-3 border mt-1 dark:border-gray-700 rounded-md shadow bg-green-50 dark:bg-green-950 max-h-[165px] overflow-y-auto edited-scrollbar">
         <p class="text-xs text-gray-500 dark:text-gray-400">GPT response:</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium ipsa modi doloribus perferendis
-          praesentium culpa ut alias repellendus nam incidunt aspernatur, quam debitis corporis, ipsam, deserunt voluptate
-          delectus aliquam est velit animi corrupti ea rerum repudiandae. Porro corporis laudantium exercitationem
-          voluptatum distinctio veritatis facilis! Fuga vel quam suscipit, aliquid voluptates alias id ipsa velit sunt
-          eveniet quaerat, deleniti sit non adipisci, dolor magnam voluptatem! Vero, laborum? Cum aspernatur veniam
-          suscipit? Expedita nisi officiis omnis, similique fugit labore nostrum assumenda deleniti ullam impedit ipsum
-          sint
-          sapiente doloremque? Sint, quos voluptatum.</p>
+        <p>As you well know, OpenAI API and its services are paid, therefore, now, I cannot, at the moment, access those services. The day I can I will do it and implement it I promise.</p>
       </div>
     </div>
     <hr class="dark:border-gray-800 mt-4 mb-2" />

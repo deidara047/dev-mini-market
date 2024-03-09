@@ -12,7 +12,7 @@ datasource db {
 
 model Todo {
   id       Int     @default(autoincrement()) @id
+  title    String
   text     String
-  imageUrl String?
   owner    String
 }
