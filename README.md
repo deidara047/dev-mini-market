@@ -3,7 +3,7 @@ Dev Mini Market is an app that's all about simple grocery shopping. It also has 
 
 The front-end side application implements Nuxt.js, while on the back-end side it implements Nest.js. GraphQL was used for the API, and finally PostgreSQL was used as the database system. This application implements Google Authenticator as a means of authentication, which at the same time uses the Google Authenticator service provided by appwrite.io.
 
-This application implements Nuxt UI as a UI Library.
+This application implements Nuxt UI as a UI Library. I used Pinia.js as a global state manager. I used spoonacular API as a mock data source of food.
 
 ## How can I test this?
 1. Get a PostgreSQL DB.
