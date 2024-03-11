@@ -1,9 +1,21 @@
 <template>
   <NuxtLink to="/to-buy/1234">
     <UCard class="dark:hover:bg-slate-800 hover:bg-gray-100 transition-colors">
-      <p><b>Title</b></p>
-      <p>Boring text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corporis obcaecati ipsum? Rerum,
-        vero nostrum!</p>
+      <p><b>{{ props.title }}</b></p>
+      <p>{{ props.text }}</p>
     </UCard>
   </NuxtLink>
 </template>
+
+<script setup lang="ts">
+const props = defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  text: {
+    type: String,
+    required: true
+  }
+})
+</script>

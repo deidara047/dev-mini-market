@@ -28,7 +28,9 @@
           </div>
           <div class="flex items-center space-x-6">
             <NuxtLink class="navlinks" :prefetch="true" to="/">Home</NuxtLink>
-            <NuxtLink class="navlinks" :prefetch="true" to="/to-buy">To-Buy</NuxtLink>
+            <template v-if="userStore.fetchState === 'success'">
+              <NuxtLink class="navlinks" :prefetch="true" to="/to-buy">To-Buy</NuxtLink>
+            </template>
             <NuxtLink class="navlinks" :prefetch="true" to="/all-products">All Products</NuxtLink>
             <NuxtLink class="navlinks" :prefetch="true" to="/about">About</NuxtLink>
             <template v-if="userStore.fetchState === 'success'">

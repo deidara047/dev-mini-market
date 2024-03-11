@@ -13,13 +13,13 @@ export class TodoResolver {
     return this.todoService.create(createTodoInput);
   }
 
-  @Query(() => [Todo], { name: 'todoAll' })
-  findAll() {
-    return this.todoService.findAll();
+  @Query(() => [Todo], { name: 'todosByOwner' })
+  findTodoAllByOwner(@Args('owner') owner: string) {
+    return this.todoService.findAllByOwner(owner);
   }
 
   @Query(() => Todo, { name: 'todo' })
-  findOne(@Args('id', { type: () => Int }) id: number) {
+  findOneTodo(@Args('id', { type: () => Int }) id: number) {
     return this.todoService.findOne(id);
   }
 

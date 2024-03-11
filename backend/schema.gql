@@ -5,6 +5,7 @@
 input CreateTodoInput {
   owner: String!
   text: String!
+  title: String!
 }
 
 type Mutation {
@@ -15,17 +16,19 @@ type Mutation {
 
 type Query {
   todo(id: Int!): Todo!
-  todoAll: [Todo!]!
+  todosByOwner(owner: String!): [Todo!]!
 }
 
 type Todo {
   id: Int!
   owner: String!
   text: String!
+  title: String!
 }
 
 input UpdateTodoInput {
   id: Int!
   owner: String
   text: String
+  title: String
 }
