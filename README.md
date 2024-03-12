@@ -22,8 +22,7 @@ In any case, if you still can't run this program, you can open an Issue and mayb
 
 ## Demonstration Video:
 Check this video if you want to know how to use this app.
-[https://www.youtube.com/watch?v=dQw4w9WgXcQ](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-(I know, I will upload the video, just wait).
+[https://www.youtube.com/watch?v=jKaejFWo7Wc](https://www.youtube.com/watch?v=jKaejFWo7Wc)
 
 ### Dev Note:
 When adding a note to the to-do list, as you know, Apollo Client implements a cache system where the queries made are saved in cache, and when making a mutation, the cache of the previously made queries must be updated , otherwise, the query already performed will return the data it returned the first time, even after it has already been mutated in the database. Now, there are two ways to to fix this issue: through the "refreshQueries" option, or with the "update" function.
